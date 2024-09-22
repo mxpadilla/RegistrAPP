@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>inicio (temporal)</ion-title>
+    <ion-button slot="start" [routerLink]="['/login']" color="warning" id="boldStyle"><ion-icon name="chevron-back-outline"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!--Muestra el nombre del usuario-->
+  <div class="ion-text-center">
+    <p id="nombreUser">¡Bienvenido, {{username}}!</p>
+    <ion-icon name="person" id="iconUser"></ion-icon>
+  </div>
+
+  <div class="ion-text-center">
+    <ion-button [routerLink]="['/codigo-qr']" color="warning" id="boldStyle">Confirmar asistencia</ion-button>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="warning">
+    <ion-title id="boldStyle">App Desarrollada por Maximiliano P.</ion-title>
+  </ion-toolbar>
+</ion-footer>
